@@ -1,0 +1,136 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+	<head>
+		<title>CSS Exercise</title>
+		<style type="text/css">
+			/* Start off by setting the base styles on the body tag */
+			body {
+				background:#e31837;
+				color: #363636;
+				font-family: arial;
+			}
+
+			/* Let's change the color and size of our h1 tag */
+			h1 {
+				color:#e31837;
+				font-size:50px;
+				margin:0;
+			}
+
+			/* Select all h2 tags and add a little style (there are three of them) */
+			h2	{
+				background:black;
+				padding:10px;
+				color:white;
+			}
+
+			/* Select all h3 tags and make them italic */
+			h3 {
+				font-style:italic;
+			}
+
+			/* Select all paragraph tags and set the line height to 30px */
+			p {
+				line-height:30px;
+			}
+
+			/* Change all links to York red */
+			a {
+				color:red;
+			}
+				/* Change all links white with a red background when they are hovered */
+				a:hover {
+					color:white;
+					background:#e31837;
+				}
+
+			/* Find the element with a class of wrapper and write a selector for it */
+			.wrapper {
+				padding:50px;
+				margin:50px auto;
+				width:650px;
+				background:white;
+				border:1px solid #e31837;
+			}
+
+			/* Select the section with a class of description and add a blue background and a little padding */
+			.description {
+				background: lightBlue;
+				padding: 20px;
+			}
+
+				/* Select the image within the previous question's description section */
+				.description img {
+					float:left;	
+					margin-right:30px;
+					border:2px solid white;
+				}
+
+			/* Select all the blockquotes, make the font smaller and add a border */
+			blockquote {
+				font-size:12px;
+				border-left:1px solid #e31837;
+				padding-left:10px;
+			}
+				/* select the author spans within the quote div and bold them */
+				.quote span.author {
+					font-weight:bold;
+					text-transform: uppercase;
+				}
+
+			/* Select all the images of the team members */
+			.team img {
+				margin-right:12px;
+			}
+				/* Select the last image and take off the right margin (there are at least two different ways to do this) */ 
+
+				.team img:last-child {
+					margin-right:0;
+				}
+
+			/* Bonus: Add a new section underneath 'team' section called 'bonus' and give it an h2. Style the h2 tag to have a red background */
+			.bonus h2{
+				background: #e31837;
+			}
+
+		</style>
+	</head>
+	<body>
+		<!-- This is where we start the page by wrapping it with a div with the class of wrapper -->
+		<div class="wrapper">
+			<!-- A few headings -->
+			<h1>Certificate in Full-Stack Web Development</h1>
+			<h2>Intensive learning on a relaxed schedule</h2>
+			<!-- A div that wraps all the descriptions of hackeryou -->
+			<section class="description">
+				<h3>Canada’s only full-stack program created by a university!</h3>
+				<img src="https://www.yorku.ca/files/2020/04/pexels-photo-4050470.jpeg%3Fx16185" alt="Student working on computer">
+				<p>Crack the code of building game-changing websites as a <strong>full-stack web developer</strong> at <br><a href="https://continue.yorku.ca/lp/certificate-in-full-stack-web-development/">York University</a></p>
+				<p>Full-stack web development is the most in-demand specialization in web development in the GTA right now. Unfortunately, learning the skills you need to join this rapidly growing field usually require you to take months off work. Bootcamps and other full-stack web development programs demand a financial and time commitment that just isn’t an option for most people. We believe learning full-stack web development should be accessible to anyone.</p>
+			</section>
+			<!-- A div that wraps two quotes -->
+			<section class="quotes">
+				<h2>Quotes</h2>
+				<!-- notice how each quote is wrapped in a div with the class of 'quote' -->
+				<div class="quote">
+					<blockquote>"We believe that web literacy is a vital 21st century skill - as important as reading, writing and arithmetic."</blockquote>
+					<span class="author">Jane Anyone</span>
+				</div>
+				<div class="quote">
+					<blockquote>"The hands-on, project-based nature at York is perfect for those who want to immerse themselves in a new 'language' and see tangible results."</blockquote>
+					<span class="author">Jack Somebody</span>
+				</div>
+			</section><!--/.quotes-->
+
+			<!-- finally our team! -->
+			<section class="team">
+				<h2>Our Team</h2>
+				<img src="https://www.placehold.it/150x150" alt="">
+				<img src="https://www.placehold.it/150x150" alt="">
+				<img src="https://www.placehold.it/150x150" alt="">
+				<img src="https://www.placehold.it/150x150" alt="">
+			</section>
+
+		</div><!--/.wrapper-->
+	</body>
+</html>

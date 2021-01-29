@@ -1,0 +1,6 @@
+1. Start off by creating a new HTML document and saving it.
+2. Create the base structure for your webpage (head/body)
+3. Create HTML elements inside of the body tags according to the mockup we have provided.
+4. For links, try to link to any external web page as well as internally using an ID.
+5. Explore a placeholder image service to find an image that is approximately (300px x 300px)
+6. Use lorem ipsum to fill content areas - feel free to find a fun one!

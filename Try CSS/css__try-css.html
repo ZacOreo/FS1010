@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CSS Exercise</title>
+	<style type="text/css">
+		/* Here we are putting the CSS right into our HTML file, more on this in future days! */
+
+		/* The body styles are inherited by all elements on the page */
+		body {
+			background: lightgray;
+			color: dimgray;
+			font-family: arial;
+		}
+
+		/* Let's change the color of our h1 tag */
+		h1 {
+			color: rgb(100, 100, 100);
+			font-size: 50px;
+			margin: 0;
+			text-shadow:2px 2px 1px grey;
+		}
+
+		h2,
+		p {
+			font-family: Georgia;
+			font-weight: 100;
+		}
+
+		/* Change the font style of our h3 to normal */
+		h3 {
+			font-style: normal;
+			color: black;
+		}
+
+		/* p targets all paragraphs*/
+		p {
+			line-height: 30px;
+		}
+
+		/* a targets all anchors, change the colour */
+
+		a {
+			color: blue;
+		}
+
+		/* strong targets all strong elements, try changing the colour */
+		strong {
+			font-weight: 700;
+			color:green;
+		}
+
+		/* We have a div with the class of "wrapper", lets style it a little. (Don't worry we will learn more about classes soon!) */
+		.wrapper {
+			padding: 50px;
+			margin: 20px auto;
+			width: 650px;
+			background: rgb(255, 149, 149);
+			border: 5px solid yellow;
+			
+		}
+
+
+		.description img {
+			padding-right: 30px;
+		}
+
+	</style>
+</head>
+	<body>
+		<main class="wrapper">
+			<h1>Nicholas Cage</h1>
+			<h2>Actor, Filmmaker, Husband and Father.</h2>
+			<section class="description">
+				<h3>Not to be confused with <a href="https://en.wikipedia.org/wiki/Nicholas_Gage">Nicholas Gage.</a></h3>
+				<img src="https://www.placecage.com/g/650/400" alt="Nicholas Cage">
+				<p>Nicolas Kim Coppola, known professionally as <strong>Nicolas Cage,</strong> is an American actor and filmmaker. Cage has been nominated for numerous major cinematic awards, and won an Academy Award, a Golden Globe, and Screen Actors Guild Award for his performance in Leaving Las Vegas (1995).</p>
+			</section>
+
+		</main>
+
+	</body>
+</html>
